@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Apples</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+  </head>
+  <body>
+    <nav>
+| 
+	<a href="/" >Home</a> |
+  
+	<a href="/blog.html" >Blog</a> |
+  
+	<a href="/about.html" >About</a> |
+  
+</nav>
+
+<!-- 
+
+The list of values stored in _data can be accessed with the site.data_ command. 
+Using the Liquid logic brackets, we iterate through the list of data, and item.link references the variables set in the list.
+
+The second piece of logic then compares the current page, obtained with page.url, and compares it to the listed item. If the listed item matches, the format is changed to red.
+
+-->
+    <h1>Apples</h1>
+<p>21 Aug 2018 - jill</p>
+
+<p>An apple is a sweet, edible fruit produced by an apple tree.</p>
+
+<p>Apple trees are cultivated worldwide, and are the most widely grown species in
+the genus Malus. The tree originated in Central Asia, where its wild ancestor,
+Malus sieversii, is still found today. Apples have been grown for thousands of
+years in Asia and Europe, and were brought to North America by European
+colonists.</p>
+
+
+<!-- Because the layout is set to default, the title and page date wrap aroudn the content, and the body is wrapped by the default layout. This is called layout inheritence.  -->
+  </body>
+</html>
+
+<!-- Any page with Front Matter layout variable set to 'default' will wrap the content of the page with this HTML  -->
+
+<!-- The % { brackets inform Liquid to execute logic, in this case to load or include the file navigation from the _includes folder  -->
+
+<!--The stylesheet reference in the header, references styles.css, not styles.scss  -->

@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Blog</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+  </head>
+  <body>
+    <nav>
+| 
+	<a href="/" >Home</a> |
+  
+	<a href="/blog.html"  class="current" >Blog</a> |
+  
+	<a href="/about.html" >About</a> |
+  
+</nav>
+
+<!-- 
+
+The list of values stored in _data can be accessed with the site.data_ command. 
+Using the Liquid logic brackets, we iterate through the list of data, and item.link references the variables set in the list.
+
+The second piece of logic then compares the current page, obtained with page.url, and compares it to the listed item. If the listed item matches, the format is changed to red.
+
+-->
+    <h1>Latest Posts</h1>
+
+<ul>
+  
+    <li>
+      <h2><a href="/2018/08/22/kiwifruit.html">Kiwifruit</a></h2>
+      <p>Kiwifruit (often abbreviated as kiwi), or Chinese gooseberry is the edible
+berry of several species of woody vines in the genus Actinidia.</p>
+
+    </li>
+  
+    <li>
+      <h2><a href="/2018/08/21/apples.html">Apples</a></h2>
+      <p>An apple is a sweet, edible fruit produced by an apple tree.</p>
+
+    </li>
+  
+    <li>
+      <h2><a href="/2018/08/20/bananas.html">Bananas</a></h2>
+      <p>A banana is an edible fruit – botanically a berry – produced by several kinds
+of large herbaceous flowering plants in the genus Musa.</p>
+
+    </li>
+  
+</ul>
+
+<!-- A few things to note with this code: The output path post.url is automatically set by Jeykll; post.title is pulled from the name of the file, but can be overridden by setting the title in the Front Matter of the post. The reference post.excerpt pulls the first paragraph of the content -->
+  </body>
+</html>
+
+<!-- Any page with Front Matter layout variable set to 'default' will wrap the content of the page with this HTML  -->
+
+<!-- The % { brackets inform Liquid to execute logic, in this case to load or include the file navigation from the _includes folder  -->
+
+<!--The stylesheet reference in the header, references styles.css, not styles.scss  -->

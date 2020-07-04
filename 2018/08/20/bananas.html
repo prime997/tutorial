@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Bananas</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+  </head>
+  <body>
+    <nav>
+| 
+	<a href="/" >Home</a> |
+  
+	<a href="/blog.html" >Blog</a> |
+  
+	<a href="/about.html" >About</a> |
+  
+</nav>
+
+<!-- 
+
+The list of values stored in _data can be accessed with the site.data_ command. 
+Using the Liquid logic brackets, we iterate through the list of data, and item.link references the variables set in the list.
+
+The second piece of logic then compares the current page, obtained with page.url, and compares it to the listed item. If the listed item matches, the format is changed to red.
+
+-->
+    <h1>Bananas</h1>
+<p>20 Aug 2018 - jill</p>
+
+<p>A banana is an edible fruit – botanically a berry – produced by several kinds
+of large herbaceous flowering plants in the genus Musa.</p>
+
+<p>In some countries, bananas used for cooking may be called “plantains”,
+distinguishing them from dessert bananas. The fruit is variable in size, color,
+and firmness, but is usually elongated and curved, with soft flesh rich in
+starch covered with a rind, which may be green, yellow, red, purple, or brown
+when ripe.</p>
+
+
+<!-- Because the layout is set to default, the title and page date wrap aroudn the content, and the body is wrapped by the default layout. This is called layout inheritence.  -->
+  </body>
+</html>
+
+<!-- Any page with Front Matter layout variable set to 'default' will wrap the content of the page with this HTML  -->
+
+<!-- The % { brackets inform Liquid to execute logic, in this case to load or include the file navigation from the _includes folder  -->
+
+<!--The stylesheet reference in the header, references styles.css, not styles.scss  -->
